@@ -7,7 +7,9 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.andres_sagadoc.horoscoapp.R
 import com.andres_sagadoc.horoscoapp.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
@@ -26,7 +28,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initNavigation() {
-        val navHost =  supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        val navHost =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navController = navHost.navController
         binding.bottonNavView.setupWithNavController(navController)
     }
