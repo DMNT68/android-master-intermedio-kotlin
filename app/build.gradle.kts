@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    // id("kotlin-kapt")
+    alias(libs.plugins.kotlin.kapt)
+    //id("com.google.dagger.hilt.android")
+    alias(libs.plugins.dagger.hilt)
 }
 
 android {
@@ -39,6 +43,10 @@ android {
 }
 
 dependencies {
+
+    // DaggerHilt
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
 
     // Navigation Component
     implementation(libs.androidx.navigation.fragment.ktx)
