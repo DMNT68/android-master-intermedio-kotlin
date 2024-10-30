@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.kotlin.kapt)
     //id("com.google.dagger.hilt.android")
     alias(libs.plugins.dagger.hilt)
+    alias(libs.plugins.safeargs)
 }
 
 android {
