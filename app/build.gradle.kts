@@ -45,6 +45,10 @@ android {
 
 dependencies {
 
+    // Retrofit
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
     // DaggerHilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
