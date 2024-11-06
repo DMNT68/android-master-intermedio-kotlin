@@ -18,14 +18,15 @@
         tools:background="@color/red" />
 
     <ImageView
-        android:id="@+id/btnBack"
+        android:id="@+id/ivBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/back"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:src="@drawable/ic_back"
-        android:padding="24dp"/>
+        android:padding="24dp"
+        app:tint="@color/gold"/>
 
     <TextView
         android:id="@+id/tvTitle"
