@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment
 import com.andres_sagadoc.horoscoapp.R
 import com.andres_sagadoc.horoscoapp.databinding.FragmentLuckBinding
 import com.andres_sagadoc.horoscoapp.ui.providers.RandomCardProvider
+import com.aristidevs.horoscapp.ui.core.listeners.OnSwipeTouchListener
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.Random
 import javax.inject.Inject
@@ -62,10 +63,20 @@ class LuckFragment : Fragment() {
         startActivity(shareIntent)
     }
 
+    @Suppress("ClickableViewAccessibility")
     private fun initListeners() {
-        binding.ivRoulette.setOnClickListener {
-            spinRoulette()
-        }
+//        binding.ivRoulette.setOnClickListener {
+//            spinRoulette()
+//        }
+        binding.ivRoulette.setOnTouchListener(object : OnSwipeTouchListener(requireContext()) {
+            override fun onSwipeRight() {
+                spinRoulette()
+            }
+
+            override fun onSwipeLeft() {
+                spinRoulette()
+            }
+        })
     }
 
     private fun spinRoulette() {
