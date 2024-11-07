@@ -22,4 +22,10 @@
     <string name="aquarius">Aquarius</string>
     <string name="pisces">Pisces</string>
     <string name="back">Atras</string>
+
+    <!-- Lucky -->
+    <string name="roulette">Ruleta</string>
+    <string name="back_card">Reverso</string>
+    <string name="share">Compartir</string>
+    <string name="lucky_card">Carta de la suerte</string>
 </resources>
