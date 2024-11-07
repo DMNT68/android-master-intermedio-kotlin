@@ -48,6 +48,7 @@ dependencies {
     // Retrofit
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+    implementation(libs.logging.interceptor)
 
     // DaggerHilt
     implementation(libs.hilt.android)
