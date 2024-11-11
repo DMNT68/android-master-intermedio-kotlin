@@ -89,6 +89,9 @@ dependencies {
     testImplementation(libs.junit)
     testImplementation (libs.kotlintest.runner.junit5)
 
+    // mock
+    testImplementation (libs.mockk)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
