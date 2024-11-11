@@ -14,3 +14,7 @@ El temario:
 - Camera X
 - Animaciones
 - UnitTest y UITest
+- 
+- ## App captures:
+    <img src="docs/captures/menu.png" alt="Pantalla principal" height="500">
+   
