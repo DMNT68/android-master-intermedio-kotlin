@@ -1,5 +1,6 @@
 package com.andres_sagadoc.horoscoapp.data.network.response
 
+import com.andres_sagadoc.horoscoapp.data.motherObjetc.HorocopeMotherObject.anyReponse
 import io.kotlintest.shouldBe
 import org.junit.Test
 
@@ -8,7 +9,7 @@ class PredictionResponseTest {
     @Test
     fun `toDomain should return correct prediction model`() {
         // Given
-        val horoscopeResponse = PredictionResponse("date", "Description", "Cancer")
+        val horoscopeResponse = anyReponse
 
         // When
         val predictionModel = horoscopeResponse.toDomain()
