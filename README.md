@@ -14,7 +14,14 @@ El temario:
 - Camera X
 - Animaciones
 - UnitTest y UITest
-- 
-- ## App captures:
-    <img src="docs/captures/menu.png" alt="Pantalla principal" height="500">
+- ## APP 
+    <img src="docs/captures/horoscope1.png" alt="Pantalla principal" height="500"> 
+    <img src="docs/captures/horoscope2.png" alt="Pantalla principal" height="500">
+    <br />
+    <br />
+    <img src="docs/captures/luck1.png" alt="Pantalla principal" height="500">
+    <img src="docs/captures/luck2.png" alt="Pantalla principal" height="500">
+    <br />
+    <br />
+    <img src="docs/captures/palmistry.png" alt="Pantalla principal" height="500">
    
