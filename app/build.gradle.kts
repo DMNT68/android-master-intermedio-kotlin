@@ -56,11 +56,11 @@ android {
 
 dependencies {
     // Camara X
-    implementation (libs.androidx.camera.core)
-    implementation (libs.androidx.camera.camera2)
-    implementation (libs.androidx.camera.lifecycle)
-    implementation (libs.androidx.camera.view)
-    implementation (libs.androidx.camera.extensions)
+    implementation(libs.androidx.camera.core)
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.view)
+    implementation(libs.androidx.camera.extensions)
 
     // Retrofit
     implementation(libs.retrofit)
@@ -87,12 +87,21 @@ dependencies {
 
     //UnitTesting
     testImplementation(libs.junit)
-    testImplementation (libs.kotlintest.runner.junit5)
+    testImplementation(libs.kotlintest.runner.junit5)
 
     // mock
-    testImplementation (libs.mockk)
+    testImplementation(libs.mockk)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //UITesting
+    androidTestImplementation(libs.androidx.junit.v115)
+    androidTestImplementation(libs.androidx.espresso.core.v351)
+    androidTestImplementation(libs.androidx.espresso.contrib)
+    androidTestImplementation(libs.androidx.espresso.intents)
+    androidTestImplementation(libs.hilt.android.testing)
+    androidTestImplementation(libs.androidx.fragment.testing)
+    kaptAndroidTest(libs.hilt.android.compiler)
 }
